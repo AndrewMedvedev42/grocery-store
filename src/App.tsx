@@ -1,14 +1,17 @@
 import { Routes, Route } from 'react-router-dom';
 import NavigationMenu from "./components/NavigationMenu";
-import './App.css';
+import { Main } from "./pages/Main";
+import './styles/App.css';
 
 function App() {
   return (
     <>
       <NavigationMenu/>
-      <Routes>
-        <Route path="/" element={<h1>hello</h1>}/>
-      </Routes>
+      <article style={{paddingTop:66}}>
+        <Routes>
+          <Route path="/" element={<Main/>}/>
+        </Routes>
+      </article>
     </>
   );
 }

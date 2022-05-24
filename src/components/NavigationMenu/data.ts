@@ -1,5 +1,5 @@
 export const categoriesList:any[] = [
-    {name:"Pizza", image:"#/"}, 
+    {name:"Pizza", image:"/"}, 
     {name:"Sets", image:"/"}, 
     {name:"Wok", image:"/"}, 
     {name:"Soup", image:"/"}, 
