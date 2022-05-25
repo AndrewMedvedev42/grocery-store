@@ -4,7 +4,9 @@ export const CategoriesSection = () => {
     return (
         <Base>
             <Section>
-                Categories Section
+                <section>
+                    <h2>Categories</h2>
+                </section>
             </Section>
         </Base>
     )
