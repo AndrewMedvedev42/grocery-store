@@ -1,0 +1,24 @@
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    .footer-section{
+        .footer-navigation-list{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 25px;
+        }
+        .footer-social-media-list{
+            display: flex;
+            li{
+                margin-right: 10px;
+            }
+        }
+        .footer-cetegory-list{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-column-gap: 25px;
+            grid-row-gap: 0px;
+        }
+    }
+}

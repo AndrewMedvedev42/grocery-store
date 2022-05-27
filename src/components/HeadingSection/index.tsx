@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { Base, Section } from "styles/styled-components";
+import { Base, Section } from "assets/styles/styled-components";
 const HeadingSection = () => {
     return (
         <Base>

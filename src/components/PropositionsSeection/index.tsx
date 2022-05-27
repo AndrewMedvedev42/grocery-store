@@ -1,4 +1,4 @@
-import { Base, Section } from "styles/styled-components";
+import { Base, Section } from "assets/styles/styled-components";
 
 export const PropositionsSection = () => {
     return (

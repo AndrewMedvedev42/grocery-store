@@ -3,7 +3,6 @@ import NavigationMenu from "./components/NavigationMenu";
 import { Main } from "./pages/Main";
 import { NotAvailablePage } from "./pages/common/404";
 import { Footer } from "./components/Footer";
-import './styles/App.css';
 
 function App() {
   return (

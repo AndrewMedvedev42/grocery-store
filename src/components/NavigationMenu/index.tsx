@@ -32,13 +32,13 @@ const NavigationBar = () => {
                             <img src="/" alt="profile icon" />
                         </div>
                     </Navbar.Collapse>
-                    <div>
+                    {/* <div>
                         <span>+00000000</span>
                         <span>from 10:00 to 20:00</span>
                     </div>
                     <div>
                         <img src="/" alt="basket icon" />
-                    </div>
+                    </div> */}
                 </Container>
             </Navbar>
         </NavigationContainer>
