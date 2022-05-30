@@ -15,11 +15,6 @@ export const Footer = () => {
                         <li>About Us</li>
                         <li>Delivery</li>
                     </ul>
-                    <ul className="footer-social-media-list">
-                        <li>{<FontAwesomeIcon className="fa-2x" icon={faFacebookF} />}</li>
-                        <li>{<FontAwesomeIcon className="fa-2x" icon={faInstagram} />}</li>
-                        <li>{<FontAwesomeIcon className="fa-2x" icon={faTwitter} />}</li>
-                    </ul>
                 </section>
                 <section className="footer-section">
                     <ul className="footer-cetegory-list">
@@ -35,14 +30,14 @@ export const Footer = () => {
                         <li>Discount</li>
                     </ul>
                 </section>
-                <section className="footer-section">
+                <section className="footer-section footer-contacts">
                     <h4>+7 (495) 617-14-24</h4>
                     <p>from 10:00 to 23:00</p>
-                    <div>
-                        <span>facebook</span>
-                        <span>Instagram</span>
-                        <span>Twitter</span>
-                    </div>
+                    <ul className="footer-social-media-list">
+                        <li>{<FontAwesomeIcon className="fa-1x" icon={faFacebookF} />}</li>
+                        <li>{<FontAwesomeIcon className="fa-1x" icon={faInstagram} />}</li>
+                        <li>{<FontAwesomeIcon className="fa-1x" icon={faTwitter} />}</li>
+                    </ul>
                 </section>
             </Section>
         </FooterSection>
