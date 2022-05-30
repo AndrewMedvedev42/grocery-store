@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 
 import './assets/styles/index.css';
+import './assets/styles/compiledScss/components/global.css';
 import './assets/styles/compiledScss/components/footer.css';
 
 import App from './App.tsx';

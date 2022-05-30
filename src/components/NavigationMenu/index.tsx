@@ -1,4 +1,4 @@
-import { categoriesList } from "./data";
+import { categoriesList } from "../../assets/data/categoryList";
 import { NavigationContainer } from "./styles";
 
 import {  Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
