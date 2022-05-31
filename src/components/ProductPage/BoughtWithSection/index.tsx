@@ -1,14 +1,14 @@
-import { Base, Section } from "assets/styles/styled-components";
-import { ProductList } from "assets/styles/styled-components/ProductList";
+import { Section } from "assets/styles/styled-components";
+import { ProductSection, ProductList } from "assets/styles/styled-components/ProductList";
 import { productList } from 'assets/data/productsList';
 import { FoodCardComponent } from 'components/FoodCard';
 
-export const PropositionsSection = () => {
+export const BoughtWithSection = () => {
     return (
-        <Base>
+        <ProductSection>
             <Section>
                 <section>
-                    <h2 className="mb-4">Best propositions</h2>
+                    <h2 className="mb-4">Also bought with</h2>
                     <ProductList>
                         {
                             productList.map((item:any)=>{
@@ -18,10 +18,8 @@ export const PropositionsSection = () => {
                             })
                         }
                     </ProductList>
-                </section>
+                </section>         
             </Section>
-        </Base>
+        </ProductSection>
     )
 }
-
-export default PropositionsSection

@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 export const NavigationContainer = styled.header`
+    background:#8CC63F;
     width:100%;
     position:fixed;
-    border:5px solid red;
+    display:flex;
+    justify-content:center;
 `

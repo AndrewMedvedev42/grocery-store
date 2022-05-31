@@ -1,15 +1,17 @@
+import { Section } from "assets/styles/styled-components";
 import { categoriesList } from "../../assets/data/categoryList";
 import { NavigationContainer } from "./styles";
 
-import {  Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
+import {  Navbar, Container, Nav, NavDropdown, Button } from 'react-bootstrap';
 
 const NavigationBar = () => {
     return (
         <NavigationContainer>
-            <Navbar bg="light" expand="lg">
+            <Section>
+            <Navbar expand="lg">
                 <Container>
-                    <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Brand href="/">Logo</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" className="border-0"/>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link href="about-us">About Us</Nav.Link>
@@ -21,26 +23,22 @@ const NavigationBar = () => {
                                     const {name,image} = category
                                     return (
                                         <NavDropdown.Item href="/">
-                                            <img src={image} alt={`${name} icon`} />
                                             <span>{name}</span>
                                         </NavDropdown.Item>
                                     )
                                 })
                             }
                         </NavDropdown>
-                        <div>
+                        <Button>
                             <img src="/" alt="profile icon" />
-                        </div>
+                        </Button>
+                        <Button>
+                            <img src="/" alt="basket icon" />
+                        </Button>
                     </Navbar.Collapse>
-                    <div>
-                        <span>+00000000</span>
-                        <span>from 10:00 to 20:00</span>
-                    </div>
-                    <div>
-                        <img src="/" alt="basket icon" />
-                    </div>
                 </Container>
             </Navbar>
+            </Section>
         </NavigationContainer>
     )
 }
