@@ -11,7 +11,7 @@ export const FoodCardComponent = ({data}:any) => {
                     <span className={`${data.second_price ? ("previous-price"):("main-price")}`}>{data.first_price}$</span>
                     <span className={`${data.second_price ? ("main-price"):("d-none")}`}>{data.second_price}$</span>
                 </div>
-                <Button type="button" className="button">Order</Button>
+                <Button type="button" className="button ms-2">Order</Button>
             </div>
         </FoodCard>
     )

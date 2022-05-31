@@ -1,4 +1,5 @@
 import { Base, Section } from "assets/styles/styled-components";
+import { PropositionList, PropositionCard } from './styles';
 import data from "./data.json";
 
 export const SpeacialsSection = () => {
@@ -6,20 +7,19 @@ export const SpeacialsSection = () => {
         <Base>
             <Section>
                 <section>
-                    <h1>Specials</h1>
-                    <section>
+                    <h2>Specials</h2>
+                    <PropositionList>
                         {
-                            data.map(({title, description, image})=>{
+                            data.map(({title, description})=>{
                                 return (
-                                    <div>
+                                    <PropositionCard color="pink" className="border">
                                         <h3>{title}</h3>
                                         <p>{description}</p>
-                                        <img src={image} alt="little sushi characters" />
-                                    </div>
+                                    </PropositionCard>
                                 )
                             })
                         }
-                    </section>
+                    </PropositionList>
                 </section>
             </Section>
         </Base>

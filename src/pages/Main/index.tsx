@@ -1,8 +1,8 @@
-import HeadingSection from "components/HeadingSection";
-import PropositionsSection from "components/PropositionsSeection";
-import SpeacialsSection from "components/SpecialsSection";
-import CategoriesSection from "components/CategoriesSection";
-import AboutSection from "components/AboutSection";
+import HeadingSection from "components/MainPage/HeadingSection";
+import PropositionsSection from "components/MainPage/PropositionsSeection";
+import SpeacialsSection from "components/MainPage/SpecialsSection";
+import CategoriesSection from "components/MainPage/CategoriesSection";
+import AboutSection from "components/MainPage/AboutSection";
 
 export const Main = () => {
     return (
