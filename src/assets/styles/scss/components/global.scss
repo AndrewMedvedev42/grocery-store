@@ -5,15 +5,51 @@
         grid-template-rows: repeat(1, 1fr);
         grid-column-gap: 10px;
         grid-row-gap: 10px;
-        .tab{
-            font-weight: 700;
-            border:none;
-            border-radius: 12px;
-            padding: 10px 20px;
-        }
-        .active-tab{
-            color: white;
-            background-color: #E07153;
+        // .tab{
+        //     font-weight: 700;
+        //     border:none;
+        //     border-radius: 12px;
+        //     padding: 10px 20px;
+        // }
+        // .active-tab{
+        //     color: white;
+        //     background-color: #E07153;
+        // }
+    }
+    @media only screen and (max-width: 1000px) {
+        .tab-list{
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(2, 1fr);
         }
     }
+    @media only screen and (max-width: 500px) {
+        .tab-list{
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+}
+
+.button{
+    border:none;
+    padding: 7px;
+    color: white;
+    border-radius: 2px;
+    background-color: #c9654a;
+    // opacity: 0.8;
+    // background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #c9654a 10px ), repeating-linear-gradient( #E0715355, #E07153 );
+}
+
+.main-price{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.previous-price{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration-line: line-through;
 }

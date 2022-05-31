@@ -11,7 +11,7 @@ export const AboutSection = () => {
                         <p>Any item from Our Menu can be on your table in a maximum of 60 minutes! You have the option to make a reservation for a specific day and time.</p>
                     </section>
                     <section>
-                        <img src={`${process.env.PUBLIC_URL}/media/mainpage/suchi.png`} alt="cooker makes sushi" />
+                        {/* <img src={`${process.env.PUBLIC_URL}/media/mainpage/suchi.png`} alt="cooker makes sushi" /> */}
                     </section>
                 </article>
             </Section>

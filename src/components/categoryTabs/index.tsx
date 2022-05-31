@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 import { FoodCardComponent } from 'components/FoodCard';
 import { PreviewCategoryMenu } from './styles';
 
+import { Button } from 'react-bootstrap';
+
 export const CategoryList = () => {
     const [activeTab, setActiveTab] = useState(0)
     const [category, setCategory] = useState("milk profucts")
@@ -20,10 +22,9 @@ export const CategoryList = () => {
                 {
                     categoriesList.map((item:any, index:any)=>{
                         return (
-                            <button onClick={()=>{setActiveTab(index)}} className={`tab ${activeTab === index && "active-tab"}`}>
-                                {/* <img src={item.image} alt={`${item.name}-icon`} /> */}
+                            <Button onClick={()=>{setActiveTab(index)}} className={`btn ${activeTab === index ? "btn-primary" : "btn-light"}`}>
                                 <span>{item.name}</span>
-                            </button>
+                            </Button>
                         )
                     })
                 }
