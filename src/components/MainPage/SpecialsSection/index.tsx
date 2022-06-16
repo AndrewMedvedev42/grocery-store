@@ -1,5 +1,8 @@
+import { v4 as uuid } from 'uuid';
+
 import { Base, Section } from "assets/styles/styled-components";
 import { PropositionList, PropositionCard } from './styles';
+
 import data from "./data.json";
 
 export const SpeacialsSection = () => {
@@ -12,7 +15,7 @@ export const SpeacialsSection = () => {
                         {
                             data.map(({title, description})=>{
                                 return (
-                                    <PropositionCard color="pink" className="border">
+                                    <PropositionCard key={uuid()} color="pink" className="border">
                                         <h3>{title}</h3>
                                         <p>{description}</p>
                                     </PropositionCard>

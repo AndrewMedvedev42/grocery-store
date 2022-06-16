@@ -1,4 +1,4 @@
-export const previewCategoryList:any[] = [
+export const catalogList:any[any] = [
     {
         category:'bread', menuList:[
             {name:'Milk', first_price:'95', second_price:'125', discount:'+25', brand:'Prostocvashino'},

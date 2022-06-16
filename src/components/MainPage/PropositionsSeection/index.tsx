@@ -1,7 +1,9 @@
+import { v4 as uuid } from 'uuid';
 import { Base, Section } from "assets/styles/styled-components";
 import { ProductList } from "assets/styles/styled-components/ProductList";
-import { productList } from 'assets/data/productsList';
 import { FoodCardComponent } from 'components/FoodCard';
+
+import { productList } from 'assets/data/productsList';
 
 export const PropositionsSection = () => {
     return (
@@ -13,7 +15,7 @@ export const PropositionsSection = () => {
                         {
                             productList.map((item:any)=>{
                                 return (
-                                    <FoodCardComponent data={item}/>
+                                    <FoodCardComponent key={uuid()} data={item}/>
                                 )
                             })
                         }

@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import NavigationMenu from "./components/NavigationMenu";
 import { Main } from "./pages/Main";
+import { CatalogPage } from "./pages/Catalog";
 import { ProductPage } from "./pages/Product";
 import { NotAvailablePage } from "./pages/common/404";
 import { Footer } from "./components/Footer";
@@ -12,6 +13,7 @@ function App() {
       <article className="content">
         <Routes>
           <Route path="/" element={<Main/>}/>
+          <Route path="/catalog" element={<CatalogPage/>}/>
           <Route path="/products/:name" element={<ProductPage/>}/>
           <Route path='*' element={<NotAvailablePage/>} />
         </Routes>

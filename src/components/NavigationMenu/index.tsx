@@ -1,8 +1,11 @@
+import { v4 as uuid } from 'uuid';
+import {  Navbar, Container, Nav, NavDropdown, Button } from 'react-bootstrap';
 import { Section } from "assets/styles/styled-components";
-import { categoriesList } from "../../assets/data/categoryList";
 import { NavigationContainer } from "./styles";
 
-import {  Navbar, Container, Nav, NavDropdown, Button } from 'react-bootstrap';
+import { categorysList } from "../../assets/data/categoryList";
+
+
 
 const NavigationBar = () => {
     return (
@@ -19,10 +22,10 @@ const NavigationBar = () => {
                         </Nav>
                         <NavDropdown title="Products" id="basic-nav-dropdown">
                             {
-                                categoriesList.map((category)=>{
+                                categorysList.map((category)=>{
                                     const {name,image} = category
                                     return (
-                                        <NavDropdown.Item href="/">
+                                        <NavDropdown.Item key={uuid()} href="/">
                                             <span>{name}</span>
                                         </NavDropdown.Item>
                                     )
