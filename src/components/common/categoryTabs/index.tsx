@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import { Button } from 'react-bootstrap';
 
-import { FoodCardComponent } from 'components/FoodCard';
+import { FoodCardComponent } from 'components/common/foodCard';
 import { PreviewCategoryMenu } from './styles';
 
 import { categorysList } from "assets/data/categoryList";
-import { previewCategoryList } from "assets/data/previewCategoryMenu";
+import { catalogList } from "assets/data/catalogList";
 
 export const CategoryList = () => {
     const [activeTab, setActiveTab] = useState(0)
@@ -14,7 +14,7 @@ export const CategoryList = () => {
     const [categoryMenu, setCategoryMenu] = useState<any>(null)
 
     useEffect(()=>{
-        setCategoryMenu(previewCategoryList.find((item:any)=>item.category === category))
+        setCategoryMenu(catalogList.find((item:any)=>item.category === category))
     },[category])
 
     console.log(category);

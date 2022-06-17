@@ -1,14 +1,14 @@
 import { Section } from "assets/styles/styled-components";
 import { ProductSection, ProductList } from "assets/styles/styled-components/ProductList";
 import { productList } from 'assets/data/productsList';
-import { FoodCardComponent } from 'components/FoodCard';
+import { FoodCardComponent } from 'components/common/foodCard';
 
-export const BoughtWithSection = () => {
+export const RecomendationsSection = () => {
     return (
         <ProductSection>
             <Section>
                 <section>
-                    <h2 className="mb-4">Also bought with</h2>
+                    <h2 className="mb-4">Recomended</h2>
                     <ProductList>
                         {
                             productList.map((item:any)=>{
@@ -18,7 +18,7 @@ export const BoughtWithSection = () => {
                             })
                         }
                     </ProductList>
-                </section>         
+                </section>           
             </Section>
         </ProductSection>
     )

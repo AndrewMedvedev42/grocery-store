@@ -1,10 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
-import NavigationMenu from "./components/NavigationMenu";
-import { Main } from "./pages/Main";
-import { CatalogPage } from "./pages/Catalog";
-import { ProductPage } from "./pages/Product";
+import NavigationMenu from "./components/common/navigationMenu";
+import { Main } from "./pages/main";
+import { CatalogPage } from "./pages/catalog";
+import { ProductPage } from "./pages/product";
 import { NotAvailablePage } from "./pages/common/404";
-import { Footer } from "./components/Footer";
+import { Footer } from "./components/common/footer";
 
 function App() {
   return (

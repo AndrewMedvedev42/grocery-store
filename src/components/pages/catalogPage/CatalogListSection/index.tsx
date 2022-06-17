@@ -1,8 +1,7 @@
-import 'react-tabs/style/react-tabs.css';
 import { Base, Section } from "assets/styles/styled-components";
-import { CategoryList } from "components/categoryTabs";
+import { CategoryList } from "components/common/categoryTabs";
 
-export const CategoriesSection = () => {
+export const CatalogListSection = () => {
     return (
         <Base>
             <Section>
@@ -17,4 +16,4 @@ export const CategoriesSection = () => {
     )
 }
 
-export default CategoriesSection
+export default CatalogListSection

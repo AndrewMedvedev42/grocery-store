@@ -3,7 +3,7 @@ import {  Navbar, Container, Nav, NavDropdown, Button } from 'react-bootstrap';
 import { Section } from "assets/styles/styled-components";
 import { NavigationContainer } from "./styles";
 
-import { categorysList } from "../../assets/data/categoryList";
+import { categorysList } from "assets/data/categoryList";
 
 
 

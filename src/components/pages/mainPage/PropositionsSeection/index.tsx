@@ -1,7 +1,7 @@
 import { v4 as uuid } from 'uuid';
 import { Base, Section } from "assets/styles/styled-components";
 import { ProductList } from "assets/styles/styled-components/ProductList";
-import { FoodCardComponent } from 'components/FoodCard';
+import { FoodCardComponent } from 'components/common/foodCard';
 
 import { productList } from 'assets/data/productsList';
 

@@ -1,7 +1,7 @@
-import PropositionsSection from "components/MainPage/PropositionsSeection";
-import SpeacialsSection from "components/MainPage/SpecialsSection";
-import CategoriesSection from "components/MainPage/CategoriesSection";
-import AboutSection from "components/MainPage/AboutSection";
+import PropositionsSection from "components/pages/mainPage/PropositionsSeection";
+import SpeacialsSection from "components/pages/mainPage/SpecialsSection";
+import CategoriesSection from "components/pages/mainPage/CategoriesSection";
+import AboutSection from "components/pages/mainPage/AboutSection";
 
 export const Main = () => {
     return (
