@@ -1,5 +1,9 @@
 import { v4 as uuid } from 'uuid';
 import {  Navbar, Container, Nav, NavDropdown, Button } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBasketShopping, faUser } from '@fortawesome/free-solid-svg-icons'
+
 import { Section } from "assets/styles/styled-components";
 import { NavigationContainer } from "./styles";
 
@@ -33,11 +37,13 @@ const NavigationBar = () => {
                             }
                         </NavDropdown>
                         <Button>
-                            <img src="/" alt="profile icon" />
+                            <FontAwesomeIcon icon={faUser}/>
                         </Button>
-                        <Button>
-                            <img src="/" alt="basket icon" />
-                        </Button>
+                        <NavLink to='basket'>
+                            <Button>
+                                <FontAwesomeIcon icon={faBasketShopping}/>
+                            </Button>
+                        </NavLink>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

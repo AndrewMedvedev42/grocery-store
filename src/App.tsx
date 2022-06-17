@@ -5,6 +5,7 @@ import { CatalogPage } from "./pages/catalog";
 import { ProductPage } from "./pages/product";
 import { NotAvailablePage } from "./pages/common/404";
 import { Footer } from "./components/common/footer";
+import { BasketPage } from 'pages/basket';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Main/>}/>
           <Route path="/catalog" element={<CatalogPage/>}/>
           <Route path="/products/:name" element={<ProductPage/>}/>
+          <Route path="/basket" element={<BasketPage/>}/>
           <Route path='*' element={<NotAvailablePage/>} />
         </Routes>
       </article>
