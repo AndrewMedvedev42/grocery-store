@@ -1,7 +1,7 @@
-import { Base, Section } from "assets/styles/styled-components";
-import { SelectAmount } from "./styles";
 import { useEffect, useState } from "react";
 import { Button } from 'react-bootstrap';
+import { Base, Section } from "assets/styles/styled-components";
+import { SelectAmount } from "./styles";
 
 export const ProductInfoSection = () => {
     const [count, setCount] = useState(1)
