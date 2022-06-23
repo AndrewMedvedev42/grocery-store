@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { v4 as uuid } from 'uuid';
-import { Button } from 'react-bootstrap';
 
 import { FoodCardComponent } from 'components/common/foodCard';
 import { PreviewCategoryMenu } from './styles';
@@ -25,12 +24,12 @@ export const CategoryList = () => {
                 {
                     categorysList.map((item:any, index:any)=>{
                         return (
-                            <Button key={uuid()} onClick={()=>{
+                            <button key={uuid()} onClick={()=>{
                                 setActiveTab(index)
                                 setCategory(item.name)
                             }} className={`btn ${activeTab === index ? "btn-primary" : "btn-light"}`}>
                                 <span>{item.name}</span>
-                            </Button>
+                            </button>
                         )
                     })
                 }

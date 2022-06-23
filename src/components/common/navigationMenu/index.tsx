@@ -1,5 +1,5 @@
 import { v4 as uuid } from 'uuid';
-import {  Navbar, Container, Nav, NavDropdown, Button } from 'react-bootstrap';
+import {  Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBasketShopping, faUser } from '@fortawesome/free-solid-svg-icons'
@@ -36,13 +36,13 @@ const NavigationBar = () => {
                                 })
                             }
                         </NavDropdown>
-                        <Button>
+                        <button className='btn'>
                             <FontAwesomeIcon icon={faUser}/>
-                        </Button>
+                        </button>
                         <NavLink to='basket'>
-                            <Button>
+                            <button className='btn btn-primary'>
                                 <FontAwesomeIcon icon={faBasketShopping}/>
-                            </Button>
+                            </button>
                         </NavLink>
                     </Navbar.Collapse>
                 </Container>

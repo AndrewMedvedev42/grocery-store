@@ -15,13 +15,6 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr); } }
 
-.button {
-  border: none;
-  padding: 7px;
-  color: white;
-  border-radius: 2px;
-  background-color: #c9654a; }
-
 .main-price {
   font-style: normal;
   font-weight: 700;
@@ -33,3 +26,19 @@
   font-size: 14px;
   line-height: 17px;
   text-decoration-line: line-through; }
+
+.btn-primary {
+  width: 100%;
+  padding: 7px;
+  color: white;
+  border-radius: 5px;
+  background-color: #c9654a;
+  border: #c9654a solid 1px; }
+
+.btn-primary:hover {
+  background-color: #ad563e;
+  border: #ad563e solid 1px; }
+
+.btn-primary:active, .btn-primary:focus {
+  background-color: #994c36;
+  border: #994c36 solid 1px; }

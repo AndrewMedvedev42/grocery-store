@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Button } from 'react-bootstrap';
 import { Base, Section } from "assets/styles/styled-components";
 import { SelectAmount } from "./styles";
 
@@ -27,13 +26,13 @@ export const ProductInfoSection = () => {
                             </div>
                             <div className="d-flex align-items-center w-75">
                                 <SelectAmount className="border rounded w-25">
-                                    <Button onClick={()=>setCount((prev)=>prev-1)} className="bg-transparent border-0 btn btn-link text-decoration-none">-</Button>
+                                    <button onClick={()=>setCount((prev)=>prev-1)} className="bg-transparent border-0 btn btn-link text-decoration-none">-</button>
                                     <div className="ps-3 pe-3">
                                         <span>{count}</span>
                                     </div>
-                                    <Button onClick={()=>setCount((prev)=>prev+1)} type="button" className="bg-transparent border-0 btn-link text-decoration-none">+</Button>
+                                    <button onClick={()=>setCount((prev)=>prev+1)} type="button" className="bg-transparent border-0 btn-link text-decoration-none">+</button>
                                 </SelectAmount>
-                                <Button type="button" className="button ms-2 w-75">Order</Button>
+                                <button type="button" className="button ms-2 w-75">Order</button>
                             </div>
                         </div>
                     </section>

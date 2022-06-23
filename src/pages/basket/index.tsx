@@ -1,4 +1,3 @@
-import { Button } from 'react-bootstrap';
 import { useSelector, useDispatch } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
@@ -25,28 +24,28 @@ export const BasketPage = () => {
                                 <section key={product_code} className='border-bottom mb-4 pb-3 d-flex justify-content-between'>
                                     <h5>{name}</h5>
                                     <SelectAmount className="border rounded">
-                                        <Button
+                                        <button
                                             onClick={()=>{dispatch(changeAmountInBasket('DECREASE_AMOUNT_TO_ITEM_IN_BASKET', product_code))}} 
                                             type="button" 
                                             className="bg-transparent border-0 btn btn-link text-decoration-none"
-                                        >-</Button>
+                                        >-</button>
                                         <div className="ps-3 pe-3">
                                             <span>{amount}</span>
                                         </div>
-                                        <Button 
+                                        <button 
                                             onClick={()=>{dispatch(changeAmountInBasket('ADD_AMOUNT_TO_ITEM_IN_BASKET', product_code))}} 
                                             type="button" className="bg-transparent border-0 btn-link text-decoration-none"
-                                        >+</Button>
+                                        >+</button>
                                     </SelectAmount>
                                     <h4>$ {price * amount}</h4>
                                     <div className='d-flex justify-content-center'>
-                                        <Button 
+                                        <button 
                                             onClick={()=>{dispatch(changeAmountInBasket('DELETE_ITEM_FROM_BASKET', product_code))}} 
                                             type="button" 
                                             className="button btn-danger ms-2"
                                         >
                                             <FontAwesomeIcon icon={faTrashCan}/>
-                                        </Button>
+                                        </button>
                                     </div>
                                 </section>
                             )
@@ -54,12 +53,12 @@ export const BasketPage = () => {
                     }
                     </section>
                     <section className='d-flex justify-content-end'>
-                        <Button 
+                        <button 
                             type="button" 
                             className="button"
                         >
                             Order
-                        </Button>
+                        </button>
                     </section>
                 </article>
             </Section>

@@ -6,13 +6,13 @@ import { Provider } from 'react-redux'
 import { PersistGate } from 'redux-persist/integration/react'
 import { configureStore } from './redux/configureStore'
 
-import './assets/styles/index.css';
-import './assets/styles/compiledScss/components/global.css';
-import './assets/styles/compiledScss/components/footer.css';
-
 import App from './App.tsx';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import './assets/styles/index.css';
+import './assets/styles/compiledScss/index.css';
+import './assets/styles/compiledScss/components/footer.css';
 
 const {store, persistor} = configureStore()
 const root = ReactDOM.createRoot(document.getElementById('root'));
