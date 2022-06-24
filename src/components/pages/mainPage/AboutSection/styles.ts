@@ -9,6 +9,7 @@ export const AboutSectionContainer = styled.article`
     }
     .description-conntainer{
         width:50%;
+        line-height: 1.7;
     }
     .image-conntainer{
         width:40%;

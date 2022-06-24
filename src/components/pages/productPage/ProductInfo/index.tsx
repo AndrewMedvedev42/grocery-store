@@ -32,7 +32,7 @@ export const ProductInfoSection = () => {
                                     </div>
                                     <button onClick={()=>setCount((prev)=>prev+1)} type="button" className="bg-transparent border-0 btn-link text-decoration-none">+</button>
                                 </SelectAmount>
-                                <button type="button" className="button ms-2 w-75">Order</button>
+                                <button type="button" className="btn btn-primary ms-2 w-75">Order</button>
                             </div>
                         </div>
                     </section>

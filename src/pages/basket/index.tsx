@@ -8,7 +8,8 @@ import changeAmountInBasket from 'redux/actions/changeAmountInBasket';
 export const BasketPage = () => {
     const dispatch = useDispatch()
     const { basket } = useSelector((state:any) => state); 
-
+    const totalSum = basket.reduce((total:any, currentValue:any) => total = total + currentValue.price * currentValue.amount,0);
+    
     return (
         <Base>
             <Section>
@@ -52,14 +53,19 @@ export const BasketPage = () => {
                         })
                     }
                     </section>
-                    <section className='d-flex justify-content-end'>
+                    <article>
+                        <section className='mb-5'>
+                            <h1 className='text-end'>Total: ${totalSum}</h1>
+                        </section>
+                        <section className='d-flex justify-content-end'>
                         <button 
                             type="button" 
-                            className="button"
+                            className="btn btn-primary"
                         >
                             Order
                         </button>
                     </section>
+                    </article>
                 </article>
             </Section>
         </Base>

@@ -22,16 +22,15 @@ export const catalogList:any[any] = [
     },
     {
         category:'oils', menuList:[
-            { product_code:847910578, name:'Milk', first_price:'95', second_price:'125', discount:'+25', brand:'Prostocvashino', image:'/' },
-            { product_code:870289660, name:'Milk', first_price:'95', second_price:'125', discount:'+25', brand:'Prostocvashino', image:'/' },
-            { product_code:117986957, name:'Milk', first_price:'95', second_price:'125', discount:'+25', brand:'Prostocvashino', image:'/' },
+            { product_code:847910578, name:'Refined sunflower oil', first_price:'10', second_price:'', discount:'', brand:'SunFlowerPro', image:'/oils/refined_sunflower_oil.jpeg' },
+            { product_code:870289660, name:'Sunflower oil', first_price:'6', second_price:'4.8', discount:'-20', brand:'SunFlowerPro', image:'/oils/sunflower_oil.jpeg' },
         ],
     },
     {
         category:'vegetable', menuList:[
-            { product_code:331368098, name:'Tomato', first_price:1.2, second_price:null, discount:null, brand:"John's Pie", image:'/' },
-            { product_code:351369619, name:'Carrot', first_price:1.2, second_price:null, discount:null, brand:"John's Pie", image:'/' },
-            { product_code:299961884, name:'Leek', first_price:1.2, second_price:null, discount:null, brand:'PeachFarm' , image:'/' },
+            { product_code:331368098, name:'Tomato', first_price:1.2, second_price:null, discount:null, brand:"John's Pie", image:'/vegetables/tomatoes.png' },
+            { product_code:351369619, name:'Carrot', first_price:1.2, second_price:null, discount:null, brand:"John's Pie", image:'/vegetables/carrots.jpeg' },
+            { product_code:299961884, name:'Leek', first_price:1.2, second_price:null, discount:null, brand:'PeachFarm' , image:'/vegetables/leek.jpeg' },
         ],
     }
 ]

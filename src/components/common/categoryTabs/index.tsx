@@ -16,8 +16,6 @@ export const CategoryList = () => {
         setCategoryMenu(catalogList.find((item:any)=>item.category === category))
     },[category])
 
-    console.log(category);
-
     return (
         <>
             <section className="tab-list mb-5">
