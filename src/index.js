@@ -13,6 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './assets/styles/index.css';
 import './assets/styles/compiledScss/index.css';
 import './assets/styles/compiledScss/components/footer.css';
+import 'antd/dist/antd.css';
 
 const {store, persistor} = configureStore()
 const root = ReactDOM.createRoot(document.getElementById('root'));

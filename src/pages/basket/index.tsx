@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Button, Checkbox, Form, Input } from 'antd';
 import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
 import { Base, Section } from '../../assets/styles/styled-components';
 import { SelectAmount } from "./styles";
@@ -10,14 +11,22 @@ export const BasketPage = () => {
     const { basket } = useSelector((state:any) => state); 
     const totalSum = basket.reduce((total:any, currentValue:any) => total = total + currentValue.price * currentValue.amount,0);
     
+    const onFinish = (values: any) => {
+        console.log('Success:', values);
+      };
+
+      const onFinishFailed = (errorInfo: any) => {
+        console.log('Failed:', errorInfo);
+      };
+
     return (
         <Base>
             <Section>
-                <article>
+                <article className='d-flex'>
+                    <section className='w-50'>
                     <section>
-                        <h2 className='text-center'>Basket</h2>
+                        <h2 className='text-start mb-4'>Make an Order</h2>
                     </section>
-                    <section>
                     {
                         basket.map((item:any)=>{
                             const {product_code, name, amount, price} = item
@@ -53,7 +62,50 @@ export const BasketPage = () => {
                         })
                     }
                     </section>
-                    <article>
+                    <article className='ms-4 w-50'>
+                        <section>
+                        <section>
+                            <Form
+                                name="basic"
+                                labelCol={{ span: 8 }}
+                                wrapperCol={{ span: 16 }}
+                                initialValues={{ remember: true }}
+                                onFinish={onFinish}
+                                onFinishFailed={onFinishFailed}
+                                autoComplete="off"
+                                >
+                                <Form.Item
+                                    label="Full name"
+                                    name="full name"
+                                    rules={[{ required: true, message: 'Please input your full name!' }]}
+                                >
+                                    <Input />
+                                </Form.Item>
+                                <Form.Item
+                                    label="Username"
+                                    name="username"
+                                    rules={[{ required: true, message: 'Please input your username!' }]}
+                                >
+                                    <Input />
+                                </Form.Item>
+                                <Form.Item
+                                    label="Username"
+                                    name="username"
+                                    rules={[{ required: true, message: 'Please input your username!' }]}
+                                >
+                                    <Input />
+                                </Form.Item>
+
+                                <Form.Item
+                                    label="Password"
+                                    name="password"
+                                    rules={[{ required: true, message: 'Please input your password!' }]}
+                                >
+                                    <Input.Password />
+                                </Form.Item>
+                                </Form>
+                        </section>
+                        </section>
                         <section className='mb-5'>
                             <h1 className='text-end'>Total: ${totalSum}</h1>
                         </section>
